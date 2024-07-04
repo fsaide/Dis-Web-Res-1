@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link href="styles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div class="container">
+        <div class="head-form">
+            <h1 id="title">Formulario Encuesta</h1>
+            <p id="description">Rellena nuestro formulario encuesta!</p>
+        </div>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Nombre </label>
+                <input required id="name" type="text" placeholder="Ingrese nombre" />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email </label>
+                <input required id="email" type="email" placeholder="Ingrese email" />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Edad </label>
+                <input required id="number" type="number" min="12" max="110" placeholder="Ingrese edad" />
+            </div>
+            <div class="form-group">
+                <p>¿cual es tu situacion actual?</p>
+                <label id="dropdown-label" for="dropdown">
+                    <select id="dropdown">
+                        <option value="select" name="user-situacion" checked>Seleccionar</option>
+                        <option value="student" name="user-situacion" checked>Estudiante</option>
+                        <option value="employee" name="user-situacion" checked>Empleado</option>
+                        <option value="unemployee" name="user-situacion" checked>Desempleado</option>
+                        <option value="not-to-saide" name="user-situacion" checked>Prefiero no decirlo</option>
+                        <option value="others" name="user-situacion" checked>otros</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-group">
+                <p>¿Recomendarias FreeCodeCamp a un amigo?</p>
+                <label for="button">
+                    <input type="radio" value="yes" id="button" name="recommended" checked></input>Si</label>
+                <label for="button">
+                    <input type="radio" value="no" id="button" name="recommended" checked></input>No</label>
+                <label for="button">
+                    <input type="radio" value="maybey" id="button" name="recommended" checked></input>Tal vez</label>
+                <label for="button">
+                    <input type="radio" value="not-sure" id="button" name="recommended" checked></input>No estoy
+                    seguro</label>
+            </div>
+            <div class="form-group">
+                <p>¿Algun comentario o sugerencia?</p>
+                <textarea id="comment" placeholder="Dejanos un comentario!"></textarea>
+            </div>
+            <div class="form-group">
+                <p>¿Que otros bootcamps te gustaria realizar?</p>
+                <label for="frontend">
+                    <input type="checkbox" id="frontend" name="bootcamp" value="Frontend">Frontend</label>
+                <label for="backend">
+                    <input type="checkbox" id="backend" name="bootcamp" value="Backend">Backend</label>
+                <label for="cybersecurity">
+                    <input type="checkbox" id="cybersecurity" name="bootcamp"
+                        value="Ciberseguridad">Ciberseguridad</label>
+                <label for="data-analyst">
+                    <input type="checkbox" id="data-analyst" name="bootcamp" value="Analista de datos">Analista de
+                    datos</label>
+                <input type="submit" id="submit" />
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
